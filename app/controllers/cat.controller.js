@@ -12,8 +12,9 @@ exports.create = (req, res) => {
     // Create a Cat
     const cat = new Cat({
         name: req.body.name,
-        owner: req.body.owner || "Michi",
-        color: req.body.color
+        owner: req.body.owner || "Vicky",
+        color: req.body.color,
+        age: req.body.age || 0
     });
 
     // Save Cat in the database
